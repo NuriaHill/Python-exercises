@@ -1,3 +1,6 @@
+#This is an exercise from code academy to understand the control flow
+
+
 def cost_ground_shipping(weight):
   if weight <= 2:
     cost = weight * 1.50 + 20.00
