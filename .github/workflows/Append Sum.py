@@ -9,3 +9,5 @@ def append_sum(lst):
   
   #We test our result as follows:
   print(append_sum([1, 1, 2]))
+  
+  #Result should be [1, 1, 2, 3, 5, 8]
