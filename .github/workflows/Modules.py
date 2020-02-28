@@ -25,3 +25,15 @@ numbers_a = range(1,13) #range of numbers 1 through 12 (inclusive)
 numbers_b = random.sample(range(1000),12)#random sample of twelve numbers within range(1000).
 plt.plot(numbers_a,numbers_b)
 plt.show()
+
+#DECIMAL
+# Import Decimal below:
+from decimal import Decimal
+
+# Fix the floating point math below:
+two_decimal_points = Decimal('0.2') + Decimal ('0.69')
+print(two_decimal_points)
+
+four_decimal_points = Decimal('0.53') * Decimal('0.65')
+print(four_decimal_points)
+#returns 0.89 and 0.3445
