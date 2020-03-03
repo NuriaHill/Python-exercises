@@ -44,4 +44,15 @@ playcounts = [78, 29, 44, 21, 89, 5]
 zipped_songs = zip(songs,playcounts)
 plays ={key:value for key, value in zipped_songs}
 print(plays)
-#Result {'Like a Rolling Stone': 78, 'Satisfaction': 29, 'Imagine': 44, "What's Going On": 21, 'Respect': 89, 'Good Vibrations': 5}
+songs = ["Like a Rolling Stone", "Satisfaction", "Imagine", "What's Going On", "Respect", "Good Vibrations"]
+playcounts = [78, 29, 44, 21, 89, 5]
+zipped_songs = zip(songs,playcounts)
+plays ={key:value for key, value in zipped_songs}
+print(plays)
+plays["Purple Haze"] = 1
+plays["Respect"] = 94
+library ={"The Best Songs": plays, "Sunday Feelings": {}}
+print(library)
+"""Result : 
+{'Like a Rolling Stone': 78, 'Satisfaction': 29, 'Imagine': 44, "What's Going On": 21, 'Respect': 89, 'Good Vibrations': 5}
+{'The Best Songs': {'Like a Rolling Stone': 78, 'Satisfaction': 29, 'Imagine': 44, "What's Going On": 21, 'Respect': 94, 'Good Vibrations': 5, 'Purple Haze': 1}, 'Sunday Feelings': {}}"""
