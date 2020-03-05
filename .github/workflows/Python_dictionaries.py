@@ -56,3 +56,23 @@ print(library)
 """Result : 
 {'Like a Rolling Stone': 78, 'Satisfaction': 29, 'Imagine': 44, "What's Going On": 21, 'Respect': 89, 'Good Vibrations': 5}
 {'The Best Songs': {'Like a Rolling Stone': 78, 'Satisfaction': 29, 'Imagine': 44, "What's Going On": 21, 'Respect': 94, 'Good Vibrations': 5, 'Purple Haze': 1}, 'Sunday Feelings': {}}"""
+
+#GET METHOD
+user_ids = {"teraCoder": 100019, "pythonGuy": 182921, "samTheJavaMaam": 123112, "lyleLoop": 102931, "keysmithKeith": 129384}
+
+tc_id  = user_ids.get("teraCoder", 100000)
+print(tc_id)
+#Returns 100019
+stack_id = user_ids.get("superStackSmash", 100000)
+print(stack_id)
+#Returns 100000
+
+#KEY DELECTION- POP METHOD
+available_items = {"health potion": 10, "cake of the cure": 5, "green elixir": 20, "strength sandwich": 25, "stamina grains": 15, "power stew": 30}
+health_points = 20
+health_points = health_points + available_items.pop("stamina grains", 0)
+health_points = health_points + available_items.pop("power stew", 0)
+health_points = health_points + available_items.pop("mystic bread", 0)
+print(available_items)
+print(health_points)
+#Returns {'health potion': 10, 'cake of the cure': 5, 'green elixir': 20, 'strength sandwich': 25} and 65
