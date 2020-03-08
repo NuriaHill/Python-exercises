@@ -77,7 +77,7 @@ print(available_items)
 print(health_points)
 #Returns {'health potion': 10, 'cake of the cure': 5, 'green elixir': 20, 'strength sandwich': 25} and 65
 
-#KEY METHOD
+#KEYS METHOD
 user_ids = {"teraCoder": 100019, "pythonGuy": 182921, "samTheJavaMaam": 123112, "lyleLoop": 102931, "keysmithKeith": 129384}
 num_exercises = {"functions": 10, "syntax": 13, "control flow": 15, "loops": 22, "lists": 19, "classes": 18, "dictionaries": 18}
 
@@ -85,3 +85,12 @@ users = user_ids.keys()
 lessons = num_exercises.keys()
 print(users) #returns dict_keys(['teraCoder', 'pythonGuy', 'samTheJavaMaam', 'lyleLoop', 'keysmithKeith'])
 print(lessons)#returns dict_keys(['functions', 'syntax', 'control flow', 'loops', 'lists', 'classes', 'dictionaries'])
+
+#VALUES METHOD
+num_exercises = {"functions": 10, "syntax": 13, "control flow": 15, "loops": 22, "lists": 19, "classes": 18, "dictionaries": 18}
+
+total_exercises = 0
+
+for value in num_exercises.values():
+  total_exercises += value
+print(total_exercises)#returns 115
