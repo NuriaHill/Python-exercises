@@ -92,3 +92,22 @@ how_many_s = [{'s': False}, "sassafrass", 18, ["a", "c", "s", "d", "s"]]
 for element in how_many_s:
   if hasattr(element, "count"):
     print(element.count("s")) #returns 5 and 2
+	
+class Circle:
+  pi = 3.14
+  def __init__(self, diameter):
+    print("Creating circle with diameter {d}".format(d=diameter))
+    # Add assignment for self.radius here:
+    self.radius = diameter/2
+  def circumference (self):
+    return 2 *self.pi *self.radius
+    
+    
+    
+medium_pizza = Circle(12)
+teaching_table = Circle(36)
+round_room = Circle(11460)
+
+print(medium_pizza.circumference()) #37.68
+print(teaching_table.circumference())#113.04
+print(round_room.circumference())#35984.4
