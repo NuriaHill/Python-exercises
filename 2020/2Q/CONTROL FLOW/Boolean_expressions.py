@@ -1,0 +1,26 @@
+#Boolean Variables
+
+my_baby_bool = "true"
+print(type(my_baby_bool))#<class 'str'>
+my_baby_bool_two = True
+print(type(my_baby_bool_two))#<class 'bool'>
+
+#IF STATEMENTS
+def dave_check(user_name):
+  if user_name == "Dave":
+    return "Get off my computer Dave!"
+
+user_name = "Dave"
+
+print(dave_check(user_name))#Get off my computer Dave!
+
+
+def dave_check(user_name):
+  if user_name == "Dave":
+    return "Get off my computer Dave!"
+  if user_name == "angela_catlady_87":
+    return "I know it is you Dave! Go away!"
+  
+user_name = "angela_catlady_87"
+
+print(dave_check(user_name))#I know it is you Dave! Go away!
