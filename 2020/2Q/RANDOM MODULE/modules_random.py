@@ -28,3 +28,20 @@ def coin_flip(guess, bet):
 #Call your game of chance functions here
 
 coin_flip ("heads", 50)
+
+def chohan (guess, bet):
+  #We calculate a random number between 1 and 6 twice and sum the result.
+  dice1 = random.randint(1,6)
+  dice2 = random.randint(1,6)
+  result = dice1 + dice2
+  print(result)
+  if (result%2 == 0 and guess.lower() == "even"):
+    print("your guess is even and you got it right, you won "+ str(bet) + " Euros")
+    return +bet
+  if (result%2 != 0 and guess.lower() == "odd"):
+    print("your guess is odd and you got it right, you won "+ str(bet) + " Euros")
+    return +bet
+  else:
+    print("Sorry, your guess is wrong, you lost " + str(bet)+ " Euros")
+    return -bet
+chohan ("odd" , 50)
