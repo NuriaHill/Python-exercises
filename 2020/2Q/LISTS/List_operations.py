@@ -53,6 +53,18 @@ jake_votes = votes.count('Jake')
 print(jake_votes)
 
 #SORTING LISTS
+
+#SORT
 addresses = ['221 B Baker St.', '42 Wallaby Way', '12 Grimmauld Place', '742 Evergreen Terrace', '1600 Pennsylvania Ave', '10 Downing St.']
-addresses.sort()
+addresses.sort() #sort does not create a new list  but sorts actual list
 print (addresses)#['10 Downing St.', '12 Grimmauld Place', '1600 Pennsylvania Ave', '221 B Baker St.', '42 Wallaby Way', '742 Evergreen Terrace']
+
+#SORTED
+#sorted creates a new list does not modify original list.
+
+games = ['Portal', 'Minecraft', 'Pacman', 'Tetris', 'The Sims', 'Pokemon']
+
+games_sorted = sorted(games)
+
+print(games)#['Portal', 'Minecraft', 'Pacman', 'Tetris', 'The Sims', 'Pokemon']
+print (games_sorted)#['Minecraft', 'Pacman', 'Pokemon', 'Portal', 'Tetris', 'The Sims']
