@@ -1,0 +1,47 @@
+#CHALLENGES
+
+#1.EVERY THREE NUMBERS BETWEEN START AND 100 INCLUSIVE
+def every_three_nums(start):
+  if start > 100:
+    return []
+  else : 
+    new_list = list(range(start, 101,3))
+    return new_list 
+	
+print(every_three_nums(91))#[91, 94, 97, 100]
+
+
+#2.REMOVE MIDDLE
+def remove_middle(lst, start, end):
+  first = lst[:start]
+  second = lst[end +1 : ]
+  new_list = first + second 
+  return new_list
+  
+  print(remove_middle([4, 8, 15, 16, 23, 42], 1, 3))#[4, 23, 42]
+  
+
+#3 MORE FREQUENT ITEM
+def more_frequent_item(lst, item1, item2):
+  if lst.count(item1) > lst.count(item2):
+    return item1
+  elif lst.count(item2) > lst.count(item1):
+    return item2
+  else:
+    return item1
+	
+print(more_frequent_item([2, 3, 3, 2, 3, 2, 3, 2, 3], 2, 3))#3
+
+
+#4 DOUBLE INDEX
+
+def double_index(lst, index):
+if index >= len(lst):
+    return lst
+  else:
+  new_lst = lst[0:index]
+  new_lst.append(lst[index]*2)
+  new_lst = new_lst + lst[index+1:]
+  return new_lst
+  
+ print(double_index([3, 8, -10, 12], 2))#[3, 8, -20, 12]
