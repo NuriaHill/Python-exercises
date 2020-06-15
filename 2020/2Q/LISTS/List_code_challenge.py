@@ -45,3 +45,14 @@ if index >= len(lst):
   return new_lst
   
  print(double_index([3, 8, -10, 12], 2))#[3, 8, -20, 12]
+ 
+ #5 MIDDLE ELEMENT
+ 
+ def middle_element(lst):
+  if len(lst) % 2 == 0:
+    sum = lst[int(len(lst)/2)] + lst[int(len(lst)/2) - 1]
+    return sum / 2
+  else:
+    return lst[int(len(lst)/2)]
+	
+print(middle_element([5, 2, -10, -4, 4, 5]))#-7.0
