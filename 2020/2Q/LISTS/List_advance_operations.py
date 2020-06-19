@@ -65,4 +65,49 @@ while len(students_in_poetry) < 6:
 
 print(students_in_poetry)#['Loki', 'Arius', 'Obie', 'Alexa', 'Minerva', 'Dora']
 
-  
+#NESTED LOOPS
+
+sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
+
+
+scoops_sold = 0
+
+for location in sales_data:
+  for scoop in location:
+    scoops_sold += scoop
+  print(location)#[12, 17, 22]  [2, 10, 3]   [5, 12, 13]
+
+print(scoops_sold)#96
+
+
+#LIST COMPRENHESION
+
+heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
+
+
+can_ride_coaster =[height for height in heights if height > 161]
+
+print(can_ride_coaster)
+
+
+celsius = [0, 10, 15, 32, -5, 27, 3]
+
+fahrenheit = [temperature *9/5 + 32  for temperature in celsius]
+
+print(fahrenheit)
+
+
+#REVIEW
+
+single_digits = range(10)
+
+squares =[]
+for digit in single_digits:
+  print (digit)
+  squares.append(digit**2)
+
+print(squares)
+
+cubes =[digit**3 for digit in single_digits]
+
+print(cubes)  
